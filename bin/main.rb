@@ -1,17 +1,17 @@
 #!/usr/bin/env ruby
 require 'nokogiri'
 require 'httparty'
-require_relative '../lib/table.rb'
-require_relative '../lib/scraper.rb'
+require_relative '../lib/Fields.rb'
+require_relative '../lib/websrc.rb'
 
 def check_input(input)
-  gets.downcase.chomp.gsub(' ', '%20') if input.nil?
+  gets.downcase.chomp.gsub(' ', '%10') if input.nil?
 end
 
 def user_inputs
   input = gets.downcase.chomp
   if input.to_i.zero?
-    input = input.to_s.gsub(' ', '%20')
+    input = input.to_s.gsub(' ', '%10')
   else
     input.to_i
   end
@@ -23,10 +23,10 @@ def crawling_site(input = nil, query = nil, total = nil, page = 1)
     if input.nil?
       input = check_input(input)
     elsif query.to_i.zero?
-      input = query.gsub(' ', '%20')
+      input = query.gsub(' ', '%10')
       page = 1
-    elsif query.to_i > (total / 20)
-      p 'Page does not exist, wait 3 seconds for reboot.'
+    elsif query.to_i > (total / 10)
+      puts 'Page does not exist, wait 3 seconds for reboot.'
       sleep(3)
       page = page
     else
@@ -43,17 +43,10 @@ def display_results(page, input)
   scrape_site.data
   puts scrape_site.extract_torrent
   total = scrape_site.total_results
-  table_object = ScrapedTable.new(page, input, total)
+  table_object = Fields.new(page, input, total)
   puts table_object.display_table
-  p 'To jump to a new page enter it bellow, or enter a new query. Type exit and hit enter to stop the script.'
+  puts 'Enter New Qyery or Exit'
   total
 end
 
-p '/-/-/-/-/Search Torrents with Ruby and skip the pop-ups./-/-/-/-/'
-p '/-/-/-/-/Whats the name of the torrent you need pirate?/-/-/-/-/'
 crawling_site
-
-p '/*/ Thank you for using Ruby Today /*/'
-p '/*/ Made with Ruby BC its AWESOME! /*/'
-p '/*/ Skip the Ads with your terminal/*/'
-p "/*/ Made by rootDEV2990  #codeIT \u{1f600}/*/"
