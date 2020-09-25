@@ -1,89 +1,61 @@
-# Ruby Scraper using HTTParty and Nokogiri
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![screenshot](./img/app_screenshot_scraper.png)
+# Testing Your Ruby Code - Enumerable
 
-## Objectives
+Developing a Web scraping/web harvesting, or web data extraction used for extracting data from websites. Currently, the app is used to automate the processe of scraping the data from webapp.
 
-1. Target URLS and get DATA.
-2. Formats data so you can filter via css.
-3. Displays scraped data in terminal.
+## 🔧 Built With
 
-## Overview
+- Ruby.
+- Using Rubocop Linters.
+- terminal-table
+- nokogiri
+- httparty
 
-Have you ever wanted to pull data to automate database creation? Now with ruby you can! Here is an open source scraper I made with Ruby to demo now with your terminal you can scrape public data off sites. This script when activated will make a get request with HTTParty and format with Nokogiri. I then display it in a terminal but as you can imagine with ruby the sky is the limit. Easily build scrapers to populate databases via scripts...just a little glimpse at Ruby’s potential. Run this in your terminal to navigate for torrents without the annoying pop up ads. Its completely open source so feel free to fork and improve it if you want to. Ideas for improvements anyone? Feel free to open a PR. Check out the demo on YouTube ...
+## Running tests with Rspec
 
- https://youtu.be/jvsxBfArJBU
+The methods were tested with Rspec which is a computer domain-specific language (DSL) testing tool written in programming language Ruby to test Ruby code. It is a behavior-driven development (BDD) framework which is extensively used in production applications.
 
-### Your Uncomplicated Ruby Scraper!
+## Rspec output
 
-With is basic and simple structure you too can have a scraper to help you extract public data from sites. This can help build databases by helping extract data for further dumping and porting to a sql.
+<img src = "images/1.png">
 
-### Project Structure
+## How to get Rspec running
 
-```bash
+- In the terminal, type `gem install rspec`
+- Once done, go to project directory and type `rspec --init`
+- You will see a folder `spec` and a file `.rspec`
+- Inside spec folder you'll see a `spec_helper.rb` file.
+- In the terminal, type `rspec`
 
-├── GemFile
-│   └── gems required
-├── bin
-│   └── main.rb
-├── lib
-│   └── scraper.rb
-│   └── table.rb
-│  
-├── .rubocop.yml
-├── .stickler.yml
-├── README.md
+## Ho to run the scrapping tool
 
-```
+From the project repository.
 
-## Built With
+Run "ruby ./bin/main.rb" inside your terminal.
 
-- Ruby, Ruby Gems, Rubocop, and target URL.
+<img src="images/2.png">
 
-## Getting Started
+## 🛠 Getting Started
 
-1. Clone directory $ git clone https://github.com/rootDEV2990/ruby_scraper
-2. Open terminal type cd /path/to/folder and hit enter.
-3. Install Ruby gems, type in terminal "bundle install".
-4. Run "ruby ./bin/main.rb" inside your terminal.
-5. Script will promp you to input your search query..input query and hit enter.
-6. Script will scrape and rescrape as user provides new inputs returning results. 
-7. Bottom table will display page available with results number inputs will be auto detected to pan pages. 
-8. You can click cmd+click on link to open in browser. 
-9. Press Ctrl+C to stop ruby script. 
+## Install
 
-### Prerequisites
+You can run these functions in you own local environment. In order to run, you need to install Ruby in your computer. For windows you can go to [Ruby installer](https://rubyinstaller.org/) and for MAC and LINUX you can go to [Ruby official site](https://www.ruby-lang.org/en/downloads/) for intructions on how to intall it. Then you can clone the project by typing `https://github.com/bmuhamood/Web-Scrapper.git`
 
-Ruby installed on your computer to be able to run the script.
+To get a local copy up and running follow these simple example steps.
 
-## What it does:
+- Go to the main page of te repo.
+- Press the "Code" button and get the repo link.
+- Clone it using git.
 
-1. Targets a URL.
-2. Gets RAW HTML.
-3. Extracts targeted DATA.
-4. Displays values in terminal.
-5. Allows you to directly navicate to download page 
-(*Site requires you to be a member to downlaod, registration is free*)
+# Authors
 
-## Authors
+👤 Bbosa Muhamood
 
-👤 **Miguel Angel Enciso Sanchez**
+- Github: [@bmuhamood](https://github.com/bmuhamood)
+- Twitter: [@croixtechfirm](https://twitter.com/croixtechfirm)
+- Linkedin: [Bbosa Muhamood](https://www.linkedin.com/in/bbosa-muhamood-06845576/)
 
-- Github: [@rootDEV2990](https://github.com/rootDEV2990)
-- Twitter: [@m29902](https://twitter.com/m29902)
-- Linkedin: [linkedin](https://www.linkedin.com/in/miguel-enciso-6474741a1/)
-- Medium: [medium](https://medium.com/@website.dev)
-
-## 🤝 Contributing
+### 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-Bitcoin donations accepted ;)
-
-1AD5ANtHmqemTZ2Qmv5UqJAMijTNyCAH8D 🚀
