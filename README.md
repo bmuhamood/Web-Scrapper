@@ -28,7 +28,7 @@ The methods were tested with Rspec which is a computer domain-specific language 
 - Inside spec folder you'll see a `spec_helper.rb` file.
 - In the terminal, type `rspec`
 
-## Ho to run the scrapping tool
+## How to run the scrapping tool
 
 From the project repository.
 
