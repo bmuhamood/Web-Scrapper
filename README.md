@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Testing Your Ruby Code - Enumerable
+# RUBY Capstone project - Webscrapping
 
 Developing a Web scraping/web harvesting, or web data extraction used for extracting data from websites. Currently, the app is used to automate the processe of scraping the data from webapp.
 
