@@ -18,7 +18,7 @@ The methods were tested with Rspec which is a computer domain-specific language 
 
 ## Rspec output
 
-<img src = "images/1.png">
+<img src="images/1.JPG">
 
 ## How to get Rspec running
 
@@ -34,7 +34,7 @@ From the project repository.
 
 Run "ruby ./bin/main.rb" inside your terminal.
 
-<img src="images/2.png">
+<img src="images/2.JPG">
 
 ## 🛠 Getting Started
 
