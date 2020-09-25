@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 require 'nokogiri'
 require 'httparty'
-require_relative '../lib/table.rb'
-require_relative '../lib/scraper.rb'
+require_relative '../lib/fields.rb'
+require_relative '../lib/webscrap.rb'
 
 def check_input(input)
   gets.downcase.chomp.gsub(' ', '%20') if input.nil?
@@ -26,7 +26,7 @@ def crawling_site(input = nil, query = nil, total = nil, page = 1)
       input = query.gsub(' ', '%20')
       page = 1
     elsif query.to_i > (total / 20)
-      p 'Page does not exist, wait 3 seconds for reboot.'
+      puts 'Page does not exist, wait 3 seconds for reboot.'
       sleep(3)
       page = page
     else
@@ -45,15 +45,8 @@ def display_results(page, input)
   total = scrape_site.total_results
   table_object = ScrapedTable.new(page, input, total)
   puts table_object.display_table
-  p 'To jump to a new page enter it bellow, or enter a new query. Type exit and hit enter to stop the script.'
+  p 'Please EXIT if you want to stop scrapping'
   total
 end
 
-p '/-/-/-/-/Search Torrents with Ruby and skip the pop-ups./-/-/-/-/'
-p '/-/-/-/-/Whats the name of the torrent you need pirate?/-/-/-/-/'
 crawling_site
-
-p '/*/ Thank you for using Ruby Today /*/'
-p '/*/ Made with Ruby BC its AWESOME! /*/'
-p '/*/ Skip the Ads with your terminal/*/'
-p "/*/ Made by rootDEV2990  #codeIT \u{1f600}/*/"

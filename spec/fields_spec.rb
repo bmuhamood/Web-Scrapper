@@ -1,4 +1,4 @@
-require './lib/table.rb'
+require './lib/fields.rb'
 
 describe ScrapedTable do
   let(:table) { ScrapedTable.new(1, 'rick%20and%20morty', 634) }
