@@ -37,11 +37,11 @@ The methods were tested with Rspec which is a computer domain-specific language 
 
 ## How to run Rspec
 
-- In the terminal from the projected repository, type `rspec` and all test Units will be displayed as per the below image
+- In the terminal from the project repository, type `rspec` and all test Units will be displayed as per the below image
 
 <img src="images/1.JPG">
 
-## How to Install required Bundle and get the scrapping tool
+## How to Install required Bundle and get the scrapping tool running
 
 From the project repository.
 
