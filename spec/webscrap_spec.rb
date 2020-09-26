@@ -15,14 +15,4 @@ describe Scraper do
       expect(@scraper.instance_variable_get(:@url)).to_not eq(new_session.instance_variable_get(:@url))
     end
   end
-  describe '.results_counter' do
-    it 'Checks number of results available' do
-      expect(@scraper.results_counter).to eq(0)
-    end
-    it 'Check that counter is built dynamicly' do
-      new_session = Scraper.new('modern%20family', 0)
-      new_session.data
-      expect(@scraper.results_counter).to eq(new_session.results_counter)
-    end
-  end
 end
