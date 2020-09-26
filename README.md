@@ -49,6 +49,7 @@ From the project repository.
 - Then cd `bin`
 - Run `ruby main.rb`
 - Place `Enter` two times for the program to run
+- Please ignore the `[DEPRECIATION]`warning related to HTTParty observed in the terminal while running the program. The `object, # nil` makes more sense when nothing is found. 
 
 <img src="images/2.JPG">
 
