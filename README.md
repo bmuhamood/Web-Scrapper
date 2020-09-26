@@ -46,7 +46,9 @@ The methods were tested with Rspec which is a computer domain-specific language 
 From the project repository.
 
 - In the Terminal, Run `bundle install`
-- Then Run `ruby ./bin/main.rb`
+- Then cd `bin`
+- Run `ruby main.rb`
+- Place `Enter` two times for the program to run
 
 <img src="images/2.JPG">
 
