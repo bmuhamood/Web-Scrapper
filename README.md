@@ -2,7 +2,7 @@
 
 # RUBY Capstone project - Webscrapping
 
-Developing a Web scraping/web harvesting, or web data extraction used for extracting data from websites. Currently, the app is used to automate the processe of scraping the data from webapp.
+Developing a Web scraping/web harvesting, or web data extraction used for extracting data from websites. Currently, the app is used to automate the processe of scraping the data from webapp. In this project, we will be scrapping Utorrent webapp.
 
 ## 🔧 Built With
 
@@ -12,30 +12,6 @@ Developing a Web scraping/web harvesting, or web data extraction used for extrac
 - nokogiri
 - httparty
 
-## Running tests with Rspec
-
-The methods were tested with Rspec which is a computer domain-specific language (DSL) testing tool written in programming language Ruby to test Ruby code. It is a behavior-driven development (BDD) framework which is extensively used in production applications.
-
-## Rspec output
-
-<img src="images/1.JPG">
-
-## How to get Rspec running
-
-- In the terminal, type `gem install rspec`
-- Once done, go to project directory and type `rspec --init`
-- You will see a folder `spec` and a file `.rspec`
-- Inside spec folder you'll see a `spec_helper.rb` file.
-- In the terminal, type `rspec`
-
-## How to run the scrapping tool
-
-From the project repository.
-
-Run "ruby ./bin/main.rb" inside your terminal.
-
-<img src="images/2.JPG">
-
 ## 🛠 Getting Started
 
 ## Install
@@ -44,9 +20,35 @@ You can run these functions in you own local environment. In order to run, you n
 
 To get a local copy up and running follow these simple example steps.
 
-- Go to the main page of te repo.
+- Go to the main page of the repo.
 - Press the "Code" button and get the repo link.
 - Clone it using git.
+
+## Running tests with Rspec
+
+The methods were tested with Rspec which is a computer domain-specific language (DSL) testing tool written in programming language Ruby to test Ruby code. It is a behavior-driven development (BDD) framework which is extensively used in production applications.
+
+## How to install Rspec
+
+- In the terminal, type `gem install rspec`
+- Once done, go to project directory and type `rspec --init`
+- You will see a folder `spec` and a file `.rspec`
+- Inside spec folder you'll see a `spec_helper.rb` file.
+
+## How to run Rspec
+
+- In the terminal from the projected repository, type `rspec` and all test Units will be displayed as per the below image
+
+<img src="images/1.JPG">
+
+## How to Install required Bundle and get the scrapping tool
+
+From the project repository.
+
+- In the Terminal, Run `bundle install`
+- Then Run `ruby ./bin/main.rb`
+
+<img src="images/2.JPG">
 
 # Authors
 

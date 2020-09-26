@@ -11,12 +11,15 @@ GEM
     multi_xml (0.6.0)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.10-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   httparty
