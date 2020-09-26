@@ -16,7 +16,7 @@ Developing a Web scraping/web harvesting, or web data extraction used for extrac
 
 ## Install
 
-You can run these functions in you own local environment. In order to run, you need to install Ruby in your computer. For windows you can go to [Ruby installer](https://rubyinstaller.org/) and for MAC and LINUX you can go to [Ruby official site](https://www.ruby-lang.org/en/downloads/) for intructions on how to intall it. Then you can clone the project by typing `https://github.com/bmuhamood/Web-Scrapper.git`
+You can run these functions in you own local environment. In order to run, you need to install Ruby in your computer. For windows you can go to [Ruby installer](https://rubyinstaller.org/) and for MAC and LINUX you can go to [Ruby official site](https://www.ruby-lang.org/en/downloads/) for intructions on how to intall it. Then you can clone the project by typing `https://github.com/bmuhamood/Web-Scrapper.git`, The scrapping page `https://katcr.to/usearch/` will and display the number of pages.
 
 To get a local copy up and running follow these simple example steps.
 
