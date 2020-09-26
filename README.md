@@ -49,7 +49,8 @@ From the project repository.
 - Then cd `bin`
 - Run `ruby main.rb`
 - Place `Enter` two times for the program to run
-- Please ignore the `[DEPRECIATION]`warning related to HTTParty observed in the terminal while running the program. The `object, # nil` makes more sense when nothing is found. 
+- Please ignore the `[DEPRECIATION]`warning related to HTTParty observed in the terminal while running the program. The `object, # nil` makes more sense when nothing is found.
+- The Data Table will display Scrapper data and pages in the table if available and none if no data available at the moment. Scrapper is dynamic.
 
 <img src="images/2.JPG">
 
